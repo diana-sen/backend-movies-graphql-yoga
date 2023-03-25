@@ -1,0 +1,27 @@
+{
+  "name": "backend-movies-graphql-yoga",
+  "version": "1.0.0",
+  "description": "backend-movies",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diana-sen/backend-movies-graphql-yoga.git"
+  },
+  "author": "diana-sen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diana-sen/backend-movies-graphql-yoga/issues"
+  },
+  "homepage": "https://github.com/diana-sen/backend-movies-graphql-yoga#readme",
+  "dependencies": {
+    "graphql-yoga": "^1.18.3",
+    "mongodb": "^5.1.0",
+    "mongoose": "^7.0.3",
+    "nodemon": "^2.0.22"
+  }
+}
