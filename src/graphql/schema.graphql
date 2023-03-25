@@ -1,0 +1,13 @@
+type Query {
+    getMovies:[movies_catalog]
+
+}
+
+type movies_catalog {
+    _id: ID
+    title: String
+    description: String
+    likes: Int
+    image: String
+    releasedDate: String
+}
