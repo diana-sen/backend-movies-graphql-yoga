@@ -1,9 +1,21 @@
 type Query {
-    getMovies:[movies_catalog]
+    getMovies:[Movie]
+    getUser:[User]
 
 }
 
-type movies_catalog {
+type Mutation {
+    # Movie Mutations: Create, Update, Delete
+    createMovie(title:String,description:String,likes:Int,image:String,releasedDate:String): [Movie]
+    updateMovie(_id:ID,title:String,description:String,likes:Int,image:String,releasedDate:String): Movie
+    deleteMovie(_id:ID): Movie
+    # User Mutations: Create, Update, Delete
+    createUser(email:String, password:String): [User]
+    updateUser(_id: ID, email:String, password:String): User
+    deleteUser(_id: ID): User
+}
+
+type Movie {
     _id: ID
     title: String
     description: String
@@ -11,3 +23,10 @@ type movies_catalog {
     image: String
     releasedDate: String
 }
+
+type User {
+    _id: ID
+    email:String
+    password:String
+}
+
